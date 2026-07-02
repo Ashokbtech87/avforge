@@ -1,0 +1,4 @@
+[23] Yan Zeng, Guoqiang Wei, Jiani Zheng, Jiaxin Zou, Yang Wei, Yuchen Zhang, and Hang Li. Make pixels dance:
+High-dynamic video generation. InProceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+Recognition, 2024.
+24

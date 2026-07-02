@@ -1,0 +1,60 @@
+Table 22Fine-grained I2V audio evaluation on sound effects. Rating from 1 to 5.
+Model
+Dialogue-
+Interaction
+Object-Physical
+Events
+Animal
+Sound
+Background /
+Ambient
+Special Effects
+(ASMR, etc.)
+AQ AVS APF AQ AVS APF AQ AVS APF AQ AVS APF AQ AVS APF
+Kling 2.6 [10] 2.00 2.00 2.00 2.46 2.38 2.62 2.00 1.89 0.56 1.60 1.90 2.30 2.25 2.44 2.38
+Wan 2.6 [1] 1.86 2.14 2.86 1.92 2.23 2.23 2.00 1.89 2.89 2.22 2.33 2.89 2.00 2.00 2.33
+Veo 3.1 [8] 2.50 2.50 2.75 2.79 2.57 3.14 2.33 2.44 2.78 2.50 2.50 3.20 2.86 2.71 3.14
+Seedance 1.5 Pro [16] 3.002.75 3.13 2.86 2.86 3.07 3.11 3.00 3.11 3.303.00 3.60 3.13 3.19 2.94
+Kling 3.0 [12] 2.88 2.25 3.00 2.77 2.69 3.00 2.78 2.78 3.00 2.80 2.90 3.30 2.75 2.75 2.63
+Seedance 2.03.50 3.00 3.88 3.57 3.50 3.86 3.56 3.22 3.443.20 3.50 4.00 3.44 3.56 3.81
+and audio are well-layered—outputs sound like composed audio rather than isolated tracks stacked on top of
+each other. Background/ambient sound reaches 4.00 on APF—the model matches BGM and environmental
+audio to the video rhythm. Object-physical events scores 3.86 on APF, with action sounds synchronized to
+on-screen motion. Seedance 1.5 Pro is competitive on background sound (APF 3.60) and animal sound (AQ
+3.11), placing it second on several sub-categories. Kling 2.6 scores 0.56 on animal sound APF—nearly zero
+prompt following—the lowest value across all audio tables. Wan 2.6 also struggles, scoring 2.00 on AQ for
+animal sound and dropping to 1.92 on object-physical events AQ.
+Table 23Fine-grained I2V audio evaluation on instruments, dual-channel audio, and UGC creative tasks.
+Model
+Instruments
+& Audio
+Dual-Channel
+Audio
+UGC Creative /
+Portrait
+AQ AVS APF AQ AVS APF AQ AVS APF
+Kling 2.6 [10] 2.50 2.86 2.57 2.00 2.07 2.07 2.27 2.36 2.45
+Wan 2.6 [1] 2.29 2.36 2.64 2.08 1.92 2.38 2.09 2.45 2.73
+Veo 3.1 [8] 2.87 3.07 3.00 2.43 2.71 2.36 2.64 2.55 3.00
+Seedance 1.5 Pro [16] 3.13 3.07 2.73 3.13 2.93 2.87 3.00 2.64 3.45
+Kling 3.0 [12] 3.00 2.67 3.00 2.67 2.80 2.47 2.91 2.91 3.00
+Seedance 2.03.60 3.27 3.80 3.47 3.53 3.27 3.64 3.64 3.82
+Other Audio.In Table 23, Seedance 2.0 scores 3.80 on instruments & audio APF, generating instrument
+sounds and melodies that match the prompt. Dual-channel AVS reaches 3.53, with stereo separation that
+tracks the visual scene. UGC creative/portrait scores 3.64/3.64/3.82, its strongest sub-category in this
+table. Seedance 1.5 Pro is second on UGC APF (3.45) and instruments AQ (3.13). Dual-channel audio is
+weak across the board for competitors: Wan 2.6 scores 1.92 on AVS and Kling 2.6 scores 2.07, both below
+usability. The audio average row confirms the overall ranking: Seedance 2.0 (3.61/3.54/3.70), Seedance 1.5
+Pro (3.07/2.95/3.10), Kling 3.0 (2.89/2.83/2.85), Veo 3.1 (2.68/2.69/2.79), Kling 2.6 (2.21/2.27/2.21), Wan
+2.6 (2.20/2.18/2.55).
+2.5 Reference-to-Video Evaluation on SeedVideoBench 2.0
+2.5.1 Quantitative Results
+Table 24Reference-to-video (R2V) evaluation results. Multimodal Task Following and Prompt Following are rated
+1–3, other dimensions are rated 1–5.
+Model Multimodal Task Editing Reference Motion Prompt
+Following Consistency Alignment Quality Following
+Vidu Q2 Pro [18] 2.13 2.29 1.79 2.38 2.08
+Kling O1 [11] 2.30 2.89 2.32 2.30 1.95
+Kling 3.0 [12] 2.32 3.37 2.37 2.36 1.95
+Seedance 2.02.50 3.54 3.03 3.24 2.52
+19

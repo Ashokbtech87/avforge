@@ -1,0 +1,20 @@
+2.2.2 Arena.AI Results
+(a)Text-to-Video generation leaderboard.
+(b)Image-to-Video generation leaderboard.
+Figure 2Leaderboards on Arena.AI (Accessed: April 8, 2026, Eastern Time).
+Arena (formerly LMArena) [2], created by researchers from UC Berkeley, is a community-powered platform
+that evaluates AI models through real-world user preferences. For video generation, users are presented with
+outputs from two anonymous models side-by-side and vote for the one they prefer, producing an Elo-style
+leaderboard that reflects genuine human judgment at scale. Unlike automated benchmarks that rely on
+metrics such as FVD or CLIPScore, Arena captures holistic human preferences encompassing visual quality,
+motion realism, temporal coherence, and prompt adherence in a single unified ranking.
+As shown in Figure 2, our Dreamina Seedance 2.0 720p ranks #1 on both the Text-to-Video and Image-to-
+Video leaderboards, with Elo scores of 1450 (±15) and 1449 (±11) respectively. On T2V (Figure 2a), it leads
+the second-place veo-3.1-audio-1080p by 79 points; on I2V (Figure 2b), it leads grok-imagine-video-720p by
+29 points. Notably, the model achieves this at 720p resolution, outperforming competitors that operate at
+1080p, which suggests that our improvements in motion dynamics and visual coherence are more perceptually
+significant than resolution alone. The Rank Spread of 1↔1 on both leaderboards indicates consistently
+top-ranked performance across evaluation dimensions. These results complement our SeedVideoBench2.0
+findings, demonstrating that the gains observed in objective metrics translate directly into stronger human
+preference.
+6

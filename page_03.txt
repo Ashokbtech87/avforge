@@ -1,0 +1,48 @@
+instruction following accuracy for Chinese dialects, traditional opera, and singing scenarios is significantly
+improved.
+Multi-modal Reference-Based Generation Evaluation.Seedance 2.0 achieves competitive leading comprehensive
+performance in reference-based generation tasks. The model supports a more comprehensive range of reference-
+based tasks, covering multiple creative scenarios including multi-modal reference-based generation, video
+editing, and video continuation. Meanwhile, it demonstrates advantages in the depth of understanding and
+response accuracy for reference content. Specifically, in video editing tasks, Seedance 2.0 delivers more
+complete instruction following and more photorealistic visual outputs compared with peer models. In terms of
+generation consistency, the model achieves favorable performance in subject appearance and voice restoration,
+with particularly notable advantages in maintaining reference consistency for action logic, special effect styles,
+and plot narrative. Despite these strengths, there is still room for optimization in multi-subject consistency,
+text restoration accuracy, and the performance of complex editing tasks.
+We evaluate Seedance 2.0 on three generation tasks—T2V (Text-to-Video), I2V (Image-to-Video), and R2V
+(Reference-to-Video)—against current commercial video generation models. Seedance 2.0 ranks first across all
+video and audio dimensions on every task.
+On video, the main advances are: (1) Stability—fewer deformations and structural issues; complex actions are
+fluid; multilingual text generation and preservation are relatively strong. (2) Vividness—sports, combat, and
+other high-amplitude actions carry strong momentum; facial expressions and gaze are emotionally engaging; the
+model produces professional-level camera movements, dynamic editing, and narrative pacing. (3) Instruction
+following—long-script prompts are executed with reasonable precision, multi-shot and multi-angle instructions
+are followed accurately, and open-ended prompts receive appropriate creative interpretation; multiple art
+styles are supported; in I2V, special art styles from the reference image are preserved while adapting subject
+motion to match. (4) Visual realism—object materials look authentic, lighting, composition, and character
+texture improve notably, and costume and prop design is polished.
+On audio: (1) Expressiveness—audio is detailed and layered, with dual-channel support; melodies and
+tones match the prompt context, and the audio dimension adds to the emotional impact of the video. (2)
+Audio-visual sync—lip movements match the visual, dialogue, sound effects, and background audio align well,
+and beat-matching between audio and video is strong. (3) Audio instruction following—Chinese dialects
+(Sichuan, Northeastern, Cantonese), opera, and singing improve markedly over the previous version; singing,
+rap, and instrumental performance are consistent, with melodies adapted to the prompt context.
+Areas for improvement remain: minor deformation artifacts, motion plausibility in edge cases, high-frequency
+visual noise, audio distortion and noise, and lip-sync errors in multi-speaker scenes. The following subsections
+present detailed results for each task.
+2.2 Evaluation Framework
+To prepare the model for production deployment, we upgraded our evaluation framework to SeedVideoBench
+2.0. The new version adds multimodal generation, narrative quality, and multilingual coverage to the evaluation
+scope, and refines how audio expressiveness is assessed. We also brought in expert evaluators from advertising
+and game production to provide subjective ratings, with a focus on narrative and aesthetic quality.
+2.2.1 SeedVideoBench 2.0
+Two main changes define the new framework. First, a multimodal task evaluation system that formally
+defines multimodal task following and generation consistency, while also covering baseline generation quality
+(prompt following, motion quality) in multimodal settings. Second, we split evaluation into objective and
+subjective tracks. Objective metrics like motion stability—use automated pipelines. Subjective metrics like
+aesthetics—go through blind expert review. Separately, we ran a realism study: evaluators tried to tell
+Seedance 2.0 outputs apart from real video clips. The results fed back into our aesthetic tuning process.
+The multimodal task evaluation module and the narrative assessment module saw the largest changes from the
+previous version.Multimodal Task Followingmeasures instruction-following accuracy across reference, editing,
+4

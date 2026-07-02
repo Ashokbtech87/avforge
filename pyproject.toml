@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "avforge"
+version = "2.0.0"
+description = "AV-Forge 2.0 — native unified multi-modal audio-video joint generation foundation model (Seedance 2.0-class)"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "Apache-2.0" }
+authors = [{ name = "AV-Forge Team" }]
+dependencies = [
+    "torch>=2.1",
+    "numpy>=1.24",
+]
+
+[project.scripts]
+avforge = "avforge.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

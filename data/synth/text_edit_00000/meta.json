@@ -1,0 +1,14 @@
+{
+  "id": "text_edit_00000",
+  "type": "text_edit",
+  "categories": [
+    "Text Overlay",
+    "Creative Text"
+  ],
+  "physics": {
+    "contact": false,
+    "momentum": false,
+    "support": false
+  },
+  "n_frames": 24
+}

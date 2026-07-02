@@ -1,0 +1,14 @@
+{
+  "id": "extension_seam_00000",
+  "type": "extension_seam",
+  "categories": [
+    "Multi-Entity Feature Match",
+    "Lighting & Color Tone"
+  ],
+  "physics": {
+    "contact": false,
+    "momentum": true,
+    "support": false
+  },
+  "n_frames": 24
+}

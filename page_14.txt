@@ -1,0 +1,55 @@
+Prompt Abstraction.This category tests UGC-style creative prompts and script-controlled generation.
+Seedance 2.0 leads on all three metrics for script-controlled (15s) generation and on MQ and IP for UGC
+creative/portrait (Table 11). The gap is largest on script-controlled (15s) generation: VPF 3.87 vs. Kling
+3.0’s 3.00 and Wan 2.6’s 2.50. Veo 3.1 scores 3.87 on VPF for UGC creative/portrait—the best in that
+sub-category—but its MQ (2.53) and IP (2.87) are much lower. Kling 2.6 falls below 2.5 on MQ for both
+sub-categories, and Wan 2.6 drops to 2.14 on script-controlled MQ. Open-ended and script-based prompts
+remain difficult for most models; only Seedance 2.0 and Kling 3.0 consistently exceed 3.0 on MQ.
+Table 12Fine-grained I2V visual evaluation on complex instruction following. Rating from 1 to 5.
+Model
+New Entity
+(Size Rel.)
+Compound
+Multi-Instr.
+Degree
+Adverbs
+MQ IP VPF MQ IP VPF MQ IP VPF
+Kling 2.6 [10] 2.50 2.88 3.13 2.38 2.88 2.00 2.47 2.87 2.33
+Wan 2.6 [1] 2.63 2.63 2.75 2.29 2.43 2.57 2.38 3.00 2.77
+Veo 3.1 [8] 2.50 2.88 3.38 2.57 2.29 2.29 2.79 2.64 2.79
+Seedance 1.5 Pro [16] 3.25 2.75 2.63 2.13 2.63 2.25 2.80 3.00 3.07
+Kling 3.0 [12] 2.75 3.00 3.00 2.88 3.25 2.50 2.60 3.07 2.67
+Seedance 2.03.75 3.25 3.88 4.00 3.38 3.75 3.20 3.40 3.40
+Complex Instructions.Compound multi-instruction is where Seedance 2.0 pulls furthest ahead: MQ 4.00
+and VPF 3.75, outscoring Kling 3.0 by over 1.0 point on MQ (Table 12). Seedance 1.5 Pro scored 2.13/2.25
+on MQ/VPF for this sub-category, so complex instruction handling improved by nearly 2 points in the 2.0
+generation. Veo 3.1 reaches 3.38 on VPF for new entity tasks—close to Seedance 2.0’s 3.88—but its MQ
+(2.50) lags, meaning it follows the instruction but produces weaker motion. Degree adverbs is the tightest
+sub-category: Seedance 2.0 scores 3.20/3.40/3.40 with Seedance 1.5 Pro not far behind at 2.80/3.00/3.07.
+Table 13Fine-grained I2V visual evaluation on complex camera work. Rating from 1 to 5.
+Model
+Combined
+Shot Instr.
+Adv. Camera
+Movement
+Difficult Shots &
+Special Tech.
+MQ IP VPF MQ IP VPF MQ IP VPF
+Kling 2.6 [10] 2.43 2.93 2.43 2.29 2.57 2.86 2.50 3.25 3.38
+Wan 2.6 [1] 2.33 2.93 2.93 2.14 2.14 2.71 2.25 2.50 3.00
+Veo 3.1 [8] 2.80 3.00 3.00 2.67 2.50 2.33 2.75 2.38 2.75
+Seedance 1.5 Pro [16] 2.67 3.07 3.07 2.43 2.71 2.57 2.50 2.63 3.00
+Kling 3.0 [12] 3.20 3.272.932.712.71 2.43 2.63 3.25 2.38
+Seedance 2.03.47 3.27 3.53 2.71 3.00 3.14 3.50 3.883.00
+Complex Camera.Seedance 2.0 leads on MQ for all three camera sub-categories and on VPF for combined
+shot instructions and advanced camera movement (Table 13). On difficult shots & special techniques, it
+scores 3.88 on IP—the highest single value in this table—while Kling 3.0 reaches 3.25. Kling 2.6 scores 3.38
+on VPF for difficult shots—the best in that sub-category—handling special techniques better than general
+camera work. Advanced camera movement is the hardest sub-category: Seedance 2.0 and Kling 3.0 tie on MQ
+(2.71), and no model exceeds 3.14 on any metric. Camera flexibility is an area where all models have room to
+improve; advanced movement scores stay below 3.2 across the board.
+Complex Motion.Seedance 2.0’s strongest results here are sports (MQ 3.73, VPF 3.93) and micro-expression
+& emotion (VPF 4.00), as shown in Table 14. Combat visual effects shows the widest gap: Seedance 2.0
+scores MQ 3.63 vs. Kling 3.0’s 2.25 and Seedance 1.5 Pro’s 2.25—a 1.38-point difference. Expression and
+gaze vividness improved substantially over Seedance 1.5 Pro (micro-expression MQ: 2.88→ 3.63). Kling 3.0
+15

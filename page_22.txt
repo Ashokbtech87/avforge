@@ -1,0 +1,46 @@
+References
+[1] Alibaba Group. Wan2.6.https://wan.video/introduction/wan2.6, 2025.
+[2] Arena AI. Arena ai leaderboard.https://arena.ai/leaderboard.
+[3] ByteDance Seed Team. Seed2.0 Model Card: Towards Intelligence Frontier for Real-World Com-
+plexity. https://lf3-static.bytednsdoc.com/obj/eden-cn/lapzild-tss/ljhwZthlaukjlkulzlp/seed2/0214/
+Seed2.0%20Model%20Card.pdf, 2026.
+[4] Chaorui Deng, Deyao Zhu, Kunchang Li, Chenhui Gou, Feng Li, Zeyu Wang, Shu Zhong, Weihao Yu, Xiaonan
+Nie, Ziang Song, et al. Emerging properties in unified multimodal pretraining.arXiv preprint arXiv:2505.14683,
+2025.
+[5] Yu Gao, Lixue Gong, Qiushan Guo, Xiaoxia Hou, Zhichao Lai, Fanshi Li, Liang Li, Xiaochen Lian, Chao Liao,
+Liyang Liu, et al. Seedream 3.0 technical report.arXiv preprint arXiv:2504.11346, 2025.
+[6] Yu Gao, Haoyuan Guo, Tuyen Hoang, Weilin Huang, Lu Jiang, Fangyuan Kong, Huixia Li, Jiashi Li, Liang
+Li, Xiaojie Li, et al. Seedance 1.0: Exploring the boundaries of video generation models. arXiv preprint
+arXiv:2506.09113, 2025.
+[7] Lixue Gong, Xiaoxia Hou, Fanshi Li, Liang Li, Xiaochen Lian, Fei Liu, Liyang Liu, Wei Liu, Wei Lu, Yichun
+Shi, et al. Seedream 2.0: A native chinese-english bilingual image generation foundation model.arXiv preprint
+arXiv:2503.07703, 2025.
+[8] Google DeepMind. Veo 3.1.https://deepmind.google/models/veo, 2025.
+[9] Dong Guo, Faming Wu, Feida Zhu, Fuxing Leng, Guang Shi, Haobin Chen, Haoqi Fan, Jian Wang, Jianyu Jiang,
+Jiawei Wang, et al. Seed1. 5-vl technical report.arXiv preprint arXiv:2505.07062, 2025.
+[10] Kuaishou Technology. Kling video 2.6.https://kling.ai, 2025.
+[11] Kuaishou Technology. Kling o1.https://kling.ai, 2025.
+[12] Kuaishou Technology. Kling 3.0.https://kling.ai, 2026.
+[13] Chao Liao, Liyang Liu, Xun Wang, Zhengxiong Luo, Xinyu Zhang, Wenliang Zhao, Jie Wu, Liang Li, Zhi Tian,
+and Weilin Huang. Mogao: An omni foundation model for interleaved multi-modal generation.arXiv preprint
+arXiv:2505.05472, 2025.
+[14] OpenAI. Sora 2.https://openai.com/index/sora-2/, 2025.
+[15] Team Seawead, Ceyuan Yang, Zhijie Lin, Yang Zhao, Shanchuan Lin, Zhibei Ma, Haoyuan Guo, Hao Chen,
+Lu Qi, Sen Wang, et al. Seaweed-7b: Cost-effective training of video generation foundation model.arXiv preprint
+arXiv:2504.08685, 2025.
+[16] Team Seedance, Heyi Chen, Siyan Chen, Xin Chen, Yanfei Chen, Ying Chen, Zhuo Chen, Feng Cheng, Tianheng
+Cheng, Xinqi Cheng, et al. Seedance 1.5 pro: A native audio-visual joint generation foundation model.arXiv
+preprint arXiv:2512.13507, 2025.
+[17] Team Seedream, Yunpeng Chen, Yu Gao, Lixue Gong, Meng Guo, Qiushan Guo, Zhiyao Guo, Xiaoxia Hou,
+Weilin Huang, Yixuan Huang, et al. Seedream 4.0: Toward next-generation multimodal image generation.arXiv
+preprint arXiv:2509.20427, 2025.
+[18] ShengShu Technology. Vidu q2 pro.https://www.vidu.com, 2026.
+[19] Yichun Shi, Peng Wang, and Weilin Huang. Seededit: Align image re-generation to image editing.arXiv preprint
+arXiv:2411.06686, 2024.
+[20] Peng Wang, Yichun Shi, Xiaochen Lian, Zhonghua Zhai, Xin Xia, Xuefeng Xiao, Weilin Huang, and Jianchao
+Yang. Seededit 3.0: Fast and high-quality generative image editing.arXiv preprint arXiv:2506.05083, 2025.
+[21] Jie Wu, Yu Gao, Zilyu Ye, Ming Li, Liang Li, Hanzhong Guo, Jie Liu, Zeyue Xue, Xiaoxia Hou, Wei Liu, et al.
+Rewarddance: Reward scaling in visual generation.arXiv preprint arXiv:2509.08826, 2025.
+[22] Zeyue Xue, Jie Wu, Yu Gao, Fangyuan Kong, Lingting Zhu, Mengzhao Chen, Zhiheng Liu, Wei Liu, Qiushan Guo,
+Weilin Huang, et al. Dancegrpo: Unleashing grpo on visual generation.arXiv preprint arXiv:2505.07818, 2025.
+23

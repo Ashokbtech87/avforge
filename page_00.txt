@@ -1,0 +1,45 @@
+Seedance 2.0:
+Advancing Video Generation for World Complexity
+ByteDance Seed
+1 Introduction
+Video generation models have become a core technology for modern digital content infrastructure and generative
+AI ecosystems, with rapid, widespread adoption across professional content production and consumer-facing
+creative scenarios. Through years of iterative research and engineering optimization, the ByteDance Seed
+team has built full-stack generative media technologies — including previous Seedance video generation
+series [6, 15, 16, 23], Seedream image generation and editing series [5, 7, 13, 17, 19, 20], Seed-VL multimodal
+vision-language models [3, 4, 9] for cross-modal semantic understanding, and other key components [21, 22],
+which are now widely integrated into our large-scale product ecosystem, supporting video generation services
+for billion-level daily active users.
+In this work, we push the frontier of video generation technologies with a notable paradigm shift: from
+generating short video clips with limited controllability to robust, highly controllable video synthesis natively
+supporting diverse control signals. This industry-wide trend has driven the development of Seedance 2.0, our
+new model designed specifically to deliver enhanced generation quality with rich multi-modal controllability
+for large-scale creative engine platforms.
+Seedance 2.0 is a newnative multi-modal audio-video generation model, officially released in China in
+early February 2026. Compared with its predecessors, Seedance 1.0 and 1.5 Pro [6, 16], Seedance 2.0 adopts
+a unified, highly efficient, and large-scale architecture for multi-modal audio-video joint generation. This
+allows it to support four input modalities: text, image, audio, and video, by integrating one of the most
+comprehensive suites of multi-modal content reference and editing capabilities available in the industry to
+date. It delivers substantial, well-rounded improvements across all key sub-dimensions of video and audio
+generation. In both expert evaluations and public user tests, the model has demonstrated performance on par
+with the leading levels in the field.
+Within its multi-modal framework, Seedance 2.0 is equipped with a full set of multi-modal reference and
+editing capabilities, supporting both standalone and combinatorial tasks, including subject control, motion
+manipulation, style transfer, special effects design and creative content generation, as well as video extension.
+This suite of capabilities renders the model applicable to a diverse array of creative production scenarios. The
+model achieves more accurate compliance with complex instructions and more stable motion performance,
+enabling it to accommodate more sophisticated production workflows. Coupled with its native, professional
+multi-shot narrative capability, vivid details of motion and facial expressions, and improved cross-frame
+consistency, the model reaches a competitive usability rate in real-world production settings.
+Seedance 2.0 supports direct generation of audio-video content with durations ranging from 4 to 15 seconds,
+with native output resolutions of 480p and 720p. For multi-modal inputs as reference, its current open
+platform supports up to 3 video clips, 9 images, and 3 audio clips. In addition, we provideSeedance 2.0 Fast
+version, an accelerated variant of Seedance 2.0 designed to boost generation speed for low-latency scenarios.
+Seedance 2.0 has delivered significant improvements to its foundational generation capabilities and multi-modal
+generation performance, bringing an enhanced creative experience for end users. Its key model capabilities
+are highlighted as follows.
+• Generation of Real-world Complexity.Seedance 2.0 achieves remarkable improvements in generation
+quality, particularly in human motion modeling, which delivers significantly enhanced naturalness, temporal
+coherence, and physical plausibility compared to previous versions. It can synthesize temporally precise,
+1
+arXiv:2604.14148v1  [cs.CV]  15 Apr 2026

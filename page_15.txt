@@ -1,0 +1,50 @@
+Table 14Fine-grained I2V visual evaluation on complex motion. Rating from 1 to 5.
+Model
+Sports Fine Motion Micro-Expr. & Emotion Combat Visual Effects
+MQ IP VPF MQ IP VPF MQ IP VPF MQ IP VPF
+Kling 2.6 [10] 3.00 3.07 2.53 2.40 3.27 2.47 2.88 3.38 2.63 2.63 2.75 2.50
+Wan 2.6 [1] 2.00 2.64 2.29 2.57 2.86 3.00 2.38 2.38 3.13 2.14 1.86 2.14
+Veo 3.1 [8] 2.54 2.92 2.69 2.57 3.00 2.79 3.00 3.00 3.00 2.50 2.75 2.88
+Seedance 1.5 Pro [16] 2.40 3.07 2.53 2.33 3.20 2.73 2.88 3.13 3.13 2.25 2.63 2.50
+Kling 3.0 [12] 2.71 3.29 3.00 2.80 3.473.00 3.13 3.50 2.88 2.25 2.88 2.13
+Seedance 2.03.73 3.47 3.93 3.33 3.47 3.53 3.63 3.63 4.00 3.63 3.25 3.13
+is competitive on fine motion IP (3.47, tying with Seedance 2.0) and micro-expression IP (3.50), preserving
+image identity well even when its motion quality lags. Wan 2.6 scores 1.86 on combat IP—the lowest value
+across all visual tables.
+Table 15Fine-grained I2V visual evaluation on complex interaction. Rating from 1 to 5.
+Model
+Group Motion Same-Type Interaction Cross-Type Interaction
+MQ IP VPF MQ IP VPF MQ IP VPF
+Kling 2.6 [10] 2.38 2.50 2.75 2.91 3.36 2.45 2.88 3.13 2.75
+Wan 2.6 [1] 2.13 2.25 2.50 2.45 2.82 2.91 2.38 3.13 2.88
+Veo 3.1 [8] 2.63 2.50 2.75 2.40 2.50 2.90 3.00 2.88 3.00
+Seedance 1.5 Pro [16] 2.50 2.63 2.882.45 2.91 3.18 2.883.253.13
+Kling 3.0 [12] 2.503.002.50 2.73 3.27 2.55 3.38 3.13 3.63
+Seedance 2.03.00 3.00 2.88 3.64 3.82 3.91 3.50 3.25 4.00
+Complex Interaction.Same-type interaction (MQ 3.64, IP 3.82, VPF 3.91) and cross-type interaction (VPF
+4.00) are Seedance 2.0’s strongest results in Table 15. Group motion is hard for everyone—Seedance 2.0
+scores 3.00/3.00/2.88, and most competitors hover near 2.5. Kling 3.0 scores 3.63 on cross-type VPF, close to
+Seedance 2.0’s 4.00, and 3.38 on MQ, handling inter-species or human-object interactions reasonably well.
+Kling 2.6 scores 3.36 on same-type IP but lags on MQ (2.91) and VPF (2.45).
+Table 16Fine-grained I2V visual evaluation on creative generation. Rating from 1 to 5.
+Model
+Counter-
+Reality
+Design
+Instructions
+Visual Effects
+(Transformation) Holidays
+MQ IP VPF MQ IP VPF MQ IP VPF MQ IP VPF
+Kling 2.6 [10] 2.36 2.71 2.57 2.20 2.80 2.20 2.43 2.57 2.71 2.43 2.86 2.71
+Wan 2.6 [1] 2.08 2.08 2.54 2.47 2.60 2.53 2.13 2.50 2.75 2.00 2.25 2.75
+Veo 3.1 [8] 2.43 2.57 2.86 2.67 2.602.933.00 2.50 3.38 2.50 2.00 2.38
+Seedance 1.5 Pro [16] 2.27 2.80 2.40 2.33 2.60 2.20 2.75 2.88 3.25 2.38 2.88 2.38
+Kling 3.0 [12] 2.273.072.47 2.602.872.33 2.63 3.13 2.50 2.71 2.86 3.00
+Seedance 2.02.93 3.07 3.07 3.13 2.872.87 3.50 3.38 3.50 3.00 3.00 3.38
+Creative.Seedance 2.0 leads on MQ for all four creative sub-categories (Table 16), with visual effects
+(transformation) as its best at 3.50/3.38/3.50. Realistic and 3D visual effects render fluidly, and the model
+preserves special art styles (felt, oil painting, Chinese gongbi) while matching motion to the style. Veo 3.1 is
+close on VPF for visual effects (3.38) and design instructions (2.93), but its MQ trails. Holidays is weak for
+most models—Veo 3.1 drops to 2.00 on IP, Wan 2.6 to 2.00/2.25. No model besides Seedance 2.0 exceeds 3.50
+on any metric in this category.
+16

@@ -1,0 +1,54 @@
+2.3.2 Motion Quality
+Table 3T2V detailed motion evaluation results across fine-grained categories. Rating from 1 to 5, with higher scores
+indicating better performance.
+Category Kling 2.6[10]Kling 3.0[12]Sora2 Pro[14]Veo3.1[8]Seedance 1.5[16]Seedance 2.0
+Holidays / Festivals 2.57 2.57 2.69 3.00 2.713.29
+Consumer Visual Effects 2.64 3.00 2.77 2.82 2.433.71
+Counter-Reality Instructions 2.86 3.00 2.67 3.00 3.00 3.71
+Cinematic Visual Effects 3.00 3.00 2.57 2.82 2.573.79
+Same-Type Interaction 2.57 3.29 2.64 2.62 2.293.79
+Cross-Type Interaction 2.79 3.14 2.79 2.77 2.433.57
+Group Coordinated Motion 2.71 3.292.57 2.33 2.573.29
+Advanced Camera Movement 3.00 3.23 2.58 2.80 2.313.77
+Special Camera Shots 2.85 3.08 2.75 2.64 2.083.92
+Editing Rhythm 2.86 3.14 2.93 2.69 2.434.21
+Combined Shot Instructions 2.86 3.00 2.29 2.67 2.293.86
+Physical Feedback 2.69 3.00 2.69 2.83 1.693.46
+Physical Phenomena 2.46 3.08 2.77 2.58 2.233.38
+Natural Phenomena 2.56 3.11 2.78 2.57 2.003.78
+Text Overlay 2.46 2.85 2.64 2.67 2.383.69
+Short Text 3.00 3.14 3.00 2.67 2.573.71
+Creative Text 2.43 2.86 2.86 2.83 2.573.57
+Long Script 3.00 3.29 2.57 2.83 2.573.57
+Abstract Challenges 3.00 3.57 3.33 2.57 2.574.00
+Multi-Entity Feature Match 3.00 3.43 3.00 2.50 2.294.43
+Knowledge Assessment 2.62 3.38 2.62 2.91 2.623.69
+Compound Multi-Instructions 2.57 2.86 2.29 2.40 2.573.71
+Surreal Motion 2.43 2.86 2.00 2.43 2.433.71
+Intense Sports Motion 2.43 2.86 2.21 2.43 2.003.79
+Fine Hand Motion 2.64 3.00 2.57 2.69 2.363.71
+Anthropomorphic Motion 2.57 2.71 2.43 2.71 2.293.29
+Emotion & Expression 2.86 3.64 2.93 3.00 2.644.00
+Visual Style 2.71 3.14 2.77 2.62 2.504.00
+Lighting & Color Tone 2.71 3.29 2.92 2.93 2.363.71
+Framing / Composition 3.13 3.38 3.00 3.25 2.634.25
+Seedance 2.0 leads on motion stability, editing rhythm, and multi-entity interaction, with far fewer cases
+of subject deformation and physically implausible motion than Seedance 1.5. Kling 3.0 ranks second but is
+limited on high-difficulty actions and complex camera work. Veo 3.1 and Sora 2 Pro handle basic motion
+reasonably well, yet fall short on fine-grained dynamics and long-take stability. The fine-grained breakdown
+in Table 3 confirms this: Seedance 2.0 ranks first on 29 of 30 categories (tying with Kling 3.0 only on group
+coordinated motion), scoring 3.29–4.43. Multi-entity feature match (4.43), framing/composition (4.25), and
+editing rhythm (4.21) all exceed 4.0. Seedance 1.5 scored low on physical feedback (1.69), natural phenomena
+(2.00), and intense sports motion (2.00); Seedance 2.0 improves by over 1.5 points on each. Kling 3.0 does
+well on emotion & expression (3.64), abstract challenges (3.57), and multi-entity feature match (3.43), but
+drops on intense sports motion (2.86), surreal motion (2.86), and special camera shots (3.08). Sora 2 Pro
+scores lowest on surreal motion (2.00) and intense sports motion (2.21); Veo 3.1 is weakest on multi-entity
+feature match (2.50) and group coordinated motion (2.33).
+2.3.3 Video Prompt Following
+Compared to Seedance 1.5, version 2.0 improves on text rendering, physical phenomena, intent comprehension,
+and style following, with more precise action following and reasonable creative interpretation beyond the
+core instructions. Kling 3.0 carries over strengths from Kling 2.6 on emotional expression and physical
+feedback, but stays weak on text following. Veo 3.1’s main shortcoming is poor text generation and instruction
+response. Sora 2 Pro handles most categories well with strong creative interpretation, leading on abstract
+challenges, but scores lowest on surreal motion, placing it in the second tier. Table 4 shows Seedance 2.0
+9

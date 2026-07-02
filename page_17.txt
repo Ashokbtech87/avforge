@@ -1,0 +1,60 @@
+Table 19Fine-grained I2V audio evaluation on Chinese voice. AQ = Audio Quality & Expressiveness, AVS =
+Audio-Visual Sync, APF = Audio Prompt Following. Rating from 1 to 5.
+Model
+Chinese Dialect /
+Lip Sync
+Chinese
+Conversation
+Variety Show
+Voice
+Chinese
+Opera
+AQ AVS APF AQ AVS APF AQ AVS APF AQ AVS APF
+Kling 2.6 [10] 2.00 2.25 2.25 2.33 2.08 2.33 2.13 2.13 2.25 2.50 2.38 2.13
+Wan 2.6 [1] 2.46 2.15 2.92 2.33 2.08 2.75 2.43 3.00 3.00 2.38 2.38 2.13
+Veo 3.1 [8] 2.09 2.45 2.18 2.20 2.50 2.10 2.14 2.29 1.86 2.25 2.75 1.75
+Seedance 1.5 Pro [16] 2.92 3.00 2.92 2.25 2.83 3.08 3.00 2.75 3.13 3.00 2.88 2.38
+Kling 3.0 [12] 3.17 3.08 3.08 3.09 2.73 3.00 2.75 2.88 3.13 2.88 3.00 1.88
+Seedance 2.03.23 3.46 3.31 3.92 3.42 4.08 3.13 4.00 4.00 3.75 3.38 2.50
+Table 20Fine-grained I2V audio evaluation on non-Chinese voice. Rating from 1 to 5.
+English Japanese Korean Indonesian Portuguese Spanish
+Model AQ AVS APF AQ AVS APF AQ AVS APF AQ AVS APF AQ AVS APF AQ AVS APF
+Kling 2.6 [10] 2.40 2.33 2.40 1.88 2.25 1.00 1.57 2.29 1.00 2.29 2.00 1.29 2.38 2.38 1.38 2.29 2.29 1.57
+Wan 2.6 [1] 2.33 2.40 2.40 2.25 2.25 2.13 2.13 2.25 2.75 2.29 1.71 1.71 2.13 2.13 2.38 2.20 2.20 2.20
+Veo 3.1 [8] 3.21 2.71 2.93 3.00 2.57 2.71 2.88 2.75 3.13 2.83 2.33 3.00 2.86 2.86 3.00 3.00 3.00 3.83
+Seedance 1.5 Pro [16] 3.333.13 3.40 3.13 3.13 3.633.13 3.00 3.503.14 3.14 3.00 2.88 3.13 4.003.29 3.14 3.43
+Kling 3.0 [12] 3.07 3.00 2.80 2.88 2.88 2.50 2.63 2.88 3.25 3.00 3.57 1.71 2.88 2.88 3.00 3.00 3.00 3.00
+Seedance 2.04.00 3.93 4.20 4.00 3.633.13 3.75 3.383.38 3.71 3.71 4.14 3.50 3.633.63 4.14 4.14 4.00
+prompt following score. Seedance 1.5 Pro is second overall, with competitive scores on Portuguese APF (4.00)
+and Japanese APF (3.63), occasionally matching or exceeding Seedance 2.0 on prompt following. Veo 3.1
+scores 3.83 on Spanish APF, its single best result across all audio tables, but its AQ and AVS stay around
+2.7–3.0. Wan 2.6 and Kling 2.6 fall far behind: Kling 2.6 scores 1.00 on APF for both Japanese and Korean,
+and Wan 2.6 drops to 1.71 on Indonesian AVS and APF.
+Table 21Fine-grained I2V audio evaluation on composite voice tasks. Rating from 1 to 5.
+Model
+Singing /
+Rap
+Off-Screen
+Voice
+Spatial
+Scene
+Non-Verbal
+Voice
+AQ AVS APF AQ AVS APF AQ AVS APF AQ AVS APF
+Kling 2.6 [10] 2.67 2.33 3.22 2.50 2.38 2.50 2.20 2.20 2.40 2.23 2.38 2.46
+Wan 2.6 [1] 2.50 2.30 3.00 2.43 2.14 2.57 2.20 2.30 2.40 2.08 2.15 2.54
+Veo 3.1 [8] 3.30 3.20 3.80 3.00 2.67 1.83 2.88 3.00 2.50 2.45 2.73 2.73
+Seedance 1.5 Pro [16] 2.80 2.90 2.90 3.13 2.50 2.88 3.10 3.00 2.40 2.85 2.85 3.23
+Kling 3.0 [12] 3.30 3.10 3.30 2.88 2.50 2.88 2.90 2.80 2.30 2.69 2.62 3.15
+Seedance 2.03.90 3.60 4.10 3.75 3.75 3.88 3.30 3.20 3.30 3.54 3.54 3.54
+Voice Composite.Seedance 2.0 leads on all four composite voice sub-categories in Table 21. Singing, rap, and
+instrumental audio across languages perform well, with melodies matched to the prompt context. Singing/rap
+scores 4.10 on APF—the model generates lyrics and melodies that match the prompted style. Off-screen voice
+scores 3.75/3.75/3.88, with audio-visual rhythm staying tight even when the speaker is not visible. Veo 3.1 is
+competitive on singing APF (3.80), its best result across all composite tasks, but drops to 1.83 on off-screen
+voice APF. Kling 3.0 scores 3.30 on singing AQ but only 2.30 on spatial scene APF. Audio-visual sync on
+off-screen narration is a pain point for most competitors—Kling 3.0 and Seedance 1.5 Pro both score 2.50 on
+AVS.
+Sound Effects.Seedance 2.0 leads on AVS for all five sound effects sub-categories and on AQ for four of five
+in Table 22; Seedance 1.5 Pro edges ahead on background/ambient AQ (3.30 vs. 3.20). Voice, sound effects,
+18

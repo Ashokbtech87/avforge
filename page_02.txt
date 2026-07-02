@@ -1,0 +1,56 @@
+We invite readers to explore the capabilities of Seedance 2.0.
+Seedance 2.0 is now accessible on Doubao1, Jimeng2 and Volcano Engine, under the model id:
+doubao-seedance-2-0-260128.
+The model can be accessed athttps://www.volcengine.com/experience/ark?mode=vision&
+modelId=doubao-seedance-2-0-260128&tab=GenVideo.
+More details are available on the official page:https://seed.bytedance.com/seedance2_0.
+2 Evaluation
+2.1 Overview
+To objectively and comprehensively assess the overall capabilities of Seedance 2.0 in multi-modal scenarios, our
+team collaborated with experts from the media industry to establish a comprehensive evaluation benchmark
+and corresponding evaluation protocols. The benchmark covers audio-video generation, reference-based
+generation, and video editing scenarios. This evaluation focuses on the model’s performance across core
+dimensions: multi-modal reference-based generation, complex audio-video instruction following, complex
+motion stability, professional cinematographic language expression, audio and video expressiveness, and
+audio-visual integrated alignment. As shown in Figure 1, Seedance 2.0 achieves the highest scores across all
+evaluated dimensions in Text-to-Video (T2V), Image-to-Video (I2V), and Reference-to-Video (R2V) tasks,
+demonstrating comprehensive leading performance over current competing models.
+lmage-to-Video Evaluation
+Seedance 2.0Seedance 1.5 proKling 3.0 Kling 2.6Wan 2.6Veo 3.1
+Audio Expressiveness
+Motion Quality
+Video PromptFollowing
+ImagePreservationAudio-VisualSync
+Audio PromptFollowing
+Multimodal Task Evaluation
+Prompt Following
+MultimodalTask Following
+Motion QualityEditing Consistency
+ReferenceAlignment
+Seedance 2.0Kling 3.0 Kling O1Vidu Q2 Pro
+Text-to-Video Evaluation
+Seedance 2.0Seedance 1.5 proKling 3.0Kling 2.6Sora 2 ProVeo 3.1
+Motion Quality
+Video PromptFollowing
+Aesthetic
+Audio Expressiveness
+Audio-VisualSync
+Audio PromptFollowing
+Figure 1Overall performance comparison across T2V, I2V, and R2V tasks. Seedance 2.0 achieves comprehensive
+leading performance over all competing models across every evaluated dimension in all three generation tasks.
+Text-to-Video and Image-to-Video Evaluation.In video generation tasks, Seedance 2.0 delivers competitive
+leading performance in the industry. Marked improvements have been achieved in motion stability, instruction
+following capability, and visual aesthetics. The model effectively mitigates common structural inaccuracies
+and visual artifacts, generating smooth and nuanced complex motions. It can accurately render high-tension
+large-scale movements and subtle micro-expressions, while supporting professional-level combined camera
+movements and narrative rhythm control. For long scripts and open-ended instructions, the model can
+respond appropriately and deliver reasonable generation outputs. Meanwhile, the generated videos exhibit
+notable cinematic aesthetics, with well-rendered object textures, lighting and composition, as well as costume,
+makeup and prop design. In the audio domain, Seedance 2.0 maintains strong performance with substantial
+improvements in audio expressiveness. Its dual-channel audio output presents rich and nuanced layers, and
+can generate sound effects or melodies that align well with the context described in the prompts. Compared
+with the previous version, the model delivers an enhanced audio-visual integrated experience, with tighter
+alignment between dialogue lines, sound effects, background audio, and visual content. Meanwhile, the
+1https://www.doubao.com/chat/create-video
+2https://jimeng.jianying.com/ai-tool/video/generate
+3

@@ -1,0 +1,14 @@
+{
+  "id": "collision_00001",
+  "type": "collision",
+  "categories": [
+    "Physical Phenomena",
+    "Physical Feedback"
+  ],
+  "physics": {
+    "contact": true,
+    "momentum": true,
+    "support": false
+  },
+  "n_frames": 24
+}

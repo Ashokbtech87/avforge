@@ -1,0 +1,14 @@
+{
+  "id": "fluid_00001",
+  "type": "fluid",
+  "categories": [
+    "Natural Phenomena",
+    "Physical Phenomena"
+  ],
+  "physics": {
+    "contact": true,
+    "momentum": false,
+    "support": true
+  },
+  "n_frames": 24
+}

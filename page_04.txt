@@ -1,0 +1,27 @@
+and extension scenarios, broken into dozens of fine-grained task types (subject identity, motion, style, etc.).
+Most models have limited multimodal coverage, which forces users to probe capability boundaries through
+trial and error; these metrics make the boundaries explicit. Specifically, the evaluation covers four task groups:
+•Reference tasks:subject, motion, visual-effects, and style reference generation.
+•Editing tasks:subject, style, scene, and audio content editing.
+•Extension tasks:plot continuation and seamless extension, both forward and backward on the timeline.
+• Combination tasks:paired evaluations that match real workflows—e.g., swapping a video subject with a
+reference image (reference + editing combined).
+Consistencycaptures how closely generated content matches the reference input (reference alignment) and
+how well non-edited regions survive during editing (editing consistency). We built specialized datasets covering
+subject, motion, scene, style, and audio, with sample distributions tuned to minimize variance at small
+evaluation budgets.
+On the video metrics side, SeedVideoBench 1.5 already tracked vividness; version 2.0 adds finernarrative
+qualitymetrics alongside the existing vividness and aesthetics dimensions. Unlike motion quality, which can
+be measured more objectively, narrative quality is inherently subjective—it asks whether the overall narrative
+reads as coherent, whether character performances and visual effects carry emotional weight, and whether the
+aesthetic choices fit the content. We evaluate it along three sub-dimensions:
+• Cinematographic language:does the camerawork support the story? We assess shot logic and expressiveness,
+looking for problems like redundant coverage, axis-crossing (180-degree rule violations), mismatched shot
+sizes, and uneven pacing.
+• Plot design:can the model take a vague or brief prompt and produce something both coherent and
+engaging?
+• Stylistic aesthetics:do the visuals have a considered look? This covers lighting, framing, composition, and
+color grading, plus whether characters, costumes, props, and sets hold together aesthetically.
+Unless otherwise noted, all evaluation results reported in the following sections are obtained using Seed-
+VideoBench 2.0.
+5

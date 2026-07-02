@@ -1,0 +1,112 @@
+# AV-Forge 2.0
+
+A **native unified multi-modal audio-video joint generation foundation model** designed to match or exceed **ByteDance Seedance 2.0** (`doubao-seedance-2-0-260128`, released early Feb 2026; technical report arXiv:2604.14148v1) on every dimension reported in the official evaluation.
+
+This repository contains the **full specification** (design, architecture, data, evaluation, stress-test prompts) plus a **runnable reference implementation scaffold** that is shape-correct and executable end-to-end.
+
+> ⚠️ The Seedance 2.0 report keeps architecture and training details proprietary. AV-Forge 2.0 is an independent design that targets the *reported performance profile*; the `src/` scaffold builds the architecture concretely but ships untrained weights (random init) so the pipeline runs for demonstration and as a starting point for real training.
+
+---
+
+## What's here
+
+```
+seedance_newVideo/
+├── Seedance.pdf                  # the source technical report
+├── docs/
+│   ├── 01_DESIGN.md              # core spec, targets, weaknesses to surpass
+│   ├── 02_ARCHITECTURE.md        # MMDiT + flow-matching + reference registry
+│   ├── 03_DATA.md                # fine-grained category curation strategy
+│   ├── 04_EVALUATION.md          # SeedVideoBench 2.0-style rubric
+│   └── 05_PROMPTS.md             # stress-test prompts vs. competitors
+├── src/avforge/
+│   ├── config.py                 # model/IO/inference config
+│   ├── encoders.py               # text/image/video/audio encoders + VAEs
+│   ├── registry.py               # reference registry (controllability core)
+│   ├── model.py                  # MMDiT backbone + shot-planner
+│   ├── sampler.py                # flow-matching sampler + CFG
+│   ├── pipeline.py               # end-to-end generate()
+│   ├── prompts.py                # programmatic stress-test prompts
+│   ├── eval/                     # SeedVideoBench 2.0 rubric
+│   └── cli.py                    # command-line interface
+└── pyproject.toml
+```
+
+---
+
+## Design summary
+
+**Identity:** production-grade, highly controllable native audio-video model for professional creative workflows (ads, cinematic/TV VFX, game animation, explainers, commentary) and **unrestricted creative use** (spicy/NSFW/adult/edgy — no refusals on content type). Safety is applied only at the output boundary (CSAM/identity/unwilling-likeness), never at the generative core.
+
+**Inputs (any combination):** text + up to 9 images + up to 3 videos + up to 3 audio clips.
+**Output:** native 4–15s audio-video at 480p/720p, binaural multi-track audio, with continuation/extension and editing.
+
+**Architecture:** joint video+audio latent flow-matching over an MMDiT backbone (double-stream text↔AV + single-stream joint AV blocks), windowed spatial + global temporal attention, RoPE-3D, gated cross-attention to a typed **Reference Registry** (the controllability core supporting 20/22 R2V tasks), an AR **shot-planner** prefix for autonomous cinematographic reasoning, and a subject-slot count head to fix multi-subject omission/duplication.
+
+**Targets (match or exceed Seedance 2.0):**
+
+| T2V (1–5) | Seedance 2.0 | AV-Forge 2.0 |
+|---|---|---|
+| Motion Quality | 3.75 | ≥ 3.85 |
+| Video Prompt Following | 3.43 | ≥ 3.50 |
+| Aesthetics | 3.67 | ≥ 3.75 |
+| Audio Quality | 3.63 | ≥ 3.70 |
+| Audio-Visual Sync | 3.75 | ≥ 3.80 |
+| Audio Prompt Following | 3.56 | ≥ 3.60 |
+
+Full fine-grained targets (30 motion + 17 audio categories, R2V, usability/satisfaction/delight) are encoded in `src/avforge/eval/`.
+
+**Where AV-Forge 2.0 surpasses Seedance 2.0** (its acknowledged weaknesses): extension quality (1.93 → ≥2.85 TF), color consistency in continuation, multi-subject omission/duplication, multi-speaker lip-sync, text restoration in edits, minor deformations, HF visual noise, audio distortion. See `docs/01_DESIGN.md` §2.
+
+---
+
+## Quick start
+
+```bash
+# from the repo root
+pip install -e .
+
+# list the 24 stress-test prompts
+avforge prompts --list
+
+# show one (the figure-skating anchor from the report)
+avforge prompts --id anchor-skating
+
+# run the (untrained) pipeline end-to-end — produces shape-correct output
+avforge generate --text "A neon sign being assembled letter-by-letter..." --duration 10 --resolution 720p
+# smoke-test on an 8 GB GPU (e.g. RTX 4060) — uses a ~0.5B config + capped grid
+avforge generate --text "A neon sign being assembled letter by letter..." --duration 4 --resolution 480p --variant fast --tiny
+# run the SeedVideoBench 2.0-style self-evaluation (demo with target-threshold scores)
+avforge eval --task T2V
+```
+
+---
+
+## Evaluation mode
+
+`avforge eval` runs the built-in **SeedVideoBench 2.0-style** self-evaluation: overall scores (6 T2V / 6 I2V / 5 R2V dims), fine-grained category scores (30 motion + 17 audio), narrative quality (cinematographic language, plot design, stylistic aesthetics), usability/satisfaction/delight, and Arena-style Elo simulation. Output is checked against the Seedance 2.0 target thresholds encoded in `src/avforge/eval/rubric.py`.
+
+---
+
+## Training (high-level)
+
+The scaffold does not include training loops, but the architecture is ready for them. The intended pipeline (see `docs/02_ARCHITECTURE.md` §4):
+
+1. **VAE pretraining** (video + audio reconstruction).
+2. **Backbone pretraining** (flow-matching on joint AV latents, text conditioning, no references; curriculum 4s→15s, 480p→720p).
+3. **Multi-modal instruction tuning** (enable all reference slots; curated task mix from `docs/03_DATA.md`).
+4. **Continuation/extension specialization** (bidirectional bridge-frame training — the fix for Seedance 2.0's weakest task).
+5. **Post-training alignment** (reward modeling + GRPO across 12 reward heads).
+6. **Fast distillation** (consistency + CFG distillation → 4–8 steps).
+
+---
+
+## Safety & ethics
+
+A structured safety framework is applied at the **output boundary** only: watermarking, provenance, and CSAM/identity/unwilling-likeness blocks. The core model **never refuses a content-type request** — adult/edgy/spicy/violent/surreal creative content is generated exactly as requested, per the spec's no-over-refusal requirement. See `docs/01_DESIGN.md` §1.8 and `docs/03_DATA.md` §6.
+
+---
+
+## License
+
+Apache-2.0. The Seedance 2.0 technical report (arXiv:2604.14148v1) is © ByteDance Seed; this project is an independent design targeting its reported performance profile.

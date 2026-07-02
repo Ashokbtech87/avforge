@@ -1,0 +1,37 @@
+Table 28R2V video editing, continuation, and extension evaluation results. “–” denotes unsupported tasks. Task Fol.
+(Multimodal Task Following) is rated 1–3, Ref. Align. (Reference Alignment), Edit. Consist. (Editing Consistency),
+and other dimensions are rated 1–5.
+Model
+Video Editing Video Continuation Video Extension
+Task Fol. Ref. Align. Edit. Consist. Task Fol. Ref. Align. Task Fol. Ref. Align.
+Veo 3.1 [8] – – – – –2.78 3.44
+Sora 2 [14] – – – – – – –
+Wan 2.6 [1] – – – – – – –
+Kling O1 [11]2.293.03 2.78 – – – –
+Vidu Q2 Pro [18] 2.02 2.58 2.22 – – – –
+Kling 3 Omni [12] 2.24 2.71 3.09 – – – –
+Seedance 2.0 2.203.79 3.75 2.88 3.181.93 3.28
+Seedance 2.0 accepts arbitrary uploaded videos for extension and supports combining extension with subject
+image input, while Veo 3.1 can only extend videos it generated itself. Despite broader input support, Seedance
+2.0’s extension quality trails Veo 3.1 notably—Veo 3.1 scores 2.78 on task following (88.89% 3-point rate)
+vs. Seedance 2.0’s 1.93 (31.82%), and 3.44 vs. 3.28 on reference alignment, making extension Seedance 2.0’s
+weakest R2V task.
+2.6 Visualization Results
+Leveraging significant advancements in foundational capabilities and Multimodal Task Performance, Seedance
+2.0 will deliver an entirely new creative experience for users. It is capable of synthesizing temporally precise
+and complex interactive scenes with high fidelity. As shown in the first and second row of Figure 4, the
+generation process maintains exceptional motion quality by strictly adhering to real-world physical laws of
+motion, avoiding physical anomalies commonly observed in earlier AI-generated videos. For example, in the
+skating scenario, the model effectively renders a series of highly demanding maneuvers—such as synchronized
+take-offs, mid-air rotations, and precise landings. In response to the diversified demands of video content
+production, Seedance 2.0 demonstrates exceptional scenario adaptability in the third row of Figure 4. Whether
+applied to commercial advertising, television visual effects, video game animation, or explainer videos, the
+model consistently delivers high-quality generation results and robust multimodal task performance. By
+replacing complex visual effects pipelines and live-action workflows with AI-driven generation, Seedance 2.0
+significantly reduces the production costs of professional audio and video content, shortens production cycles,
+and empowers both creators and enterprises to more effectively realize their creative visions.
+竞技级双⼈花样滑冰现场。开场低机位跟随冰⼑滑⾏，冰屑与反光细节清晰。进⼊旋转段，男选⼿轴线微偏出现失误，旋转节奏短暂塌陷。⼥选⼿迅速调整重⼼，眼神冷静并示意“Stay with me”，主动引导男选⼿重新对⻬节奏。随后⽆缝衔接托举动作，线条⼲净稳定。⾼潮为同步跳跃组合，空中姿态笔直，落冰果断，⾳画完美对⻬。⼥选⼿⾝着深蓝花滑裙，男选⼿为竞技运动装。整体呈现从紧张失误到冷静完成⽐赛的完整叙事，体现顶级双⼈花样滑冰中的技术能⼒与⼼理强度。
+The figure in the painting looks guilty —eyes darting left and right, then peeks out beyond the picture frame. Quickly reaches a hand outof the frame, picks up a cola, takes a sip, and breaks into a deeply satisfied expression. Just then, the sound of footsteps approaches. The figure hurriedly puts the cola back in its place. At that moment, a Western cowboy walks up, picks up the cola from the glass, and walks away with it. The closing shot pushes in to a top-lit close-up of the cola against a pure black background. At the bottom of the frame, stylized artistic subtitles appear alongside a voiceover: "宜⼝可乐，不可不尝！"
+武侠⻛格视听⼤⽚，⽵林⾥⽩⾐剑客与蓑⾐⼑客对峙。镜头在两⼈之间缓慢推移，焦点在⾬滴和剑柄之间切换，⽓氛压抑到极点，只能听⻅⾬声。突然⼀道惊雷闪过，两⼈同时冲锋，侧拍镜头极速平移，捕捉泥浆⻜溅的脚步。双兵相接瞬间画⾯切换为极慢动作，清晰展示⼑剑震⻜⾬⽔形成的圆环激波，以及被剑⽓切断的⽵叶。随后恢复常速两⼈背对背落地，蓑⾐⼑客的⽃笠裂开，画⾯戛然⽽⽌。T2VT2VI2V
+Figure 4Visualization of text-to-video (T2V) and image-to-video (I2V) generation.
+22

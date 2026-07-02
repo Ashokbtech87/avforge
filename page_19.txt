@@ -1,0 +1,64 @@
+Seedance 2.0 leads all evaluated models on R2V, outperforming Kling 3 Omni [12], Kling O1 [11], and Vidu
+Q2 Pro [18] across every dimension. It supports more multi-modal task types with higher accuracy—beyond
+subject, style, motion reference, and video editing supported by competitors, Seedance 2.0 also handles
+creative and visual-effects reference, video continuation and extension, and combined tasks such as motion
+reference + subject reference, with fewer issues of missing or confused input materials. Reference alignment is
+best across subject appearance and voice, motion, and style, with clear advantages in subject identity and
+style preservation. Motion quality—vividness, physical plausibility, and structural stability—is uniformly
+stronger, with stability as the largest lead. Prompt following is also strongest, particularly on long-text and
+complex narratives, visual effects, dialogue, text rendering, and open-ended instructions. Table 24 quantifies
+this: Seedance 2.0 ranks first on all five dimensions, scoring 2.50 and 2.52 on multimodal task following and
+prompt following (1–3 scale), and 3.54, 3.03, 3.24 on editing consistency, reference alignment, and motion
+quality (1–5 scale). The gaps are smallest on editing consistency (Kling 3.0 trails by 0.17) and largest on
+motion quality (0.86–0.94 behind across all competitors) and reference alignment (0.66–1.24 behind). Vidu
+Q2 Pro scores lowest on three of five dimensions. Kling 3.0 and Kling O1 trade second and third depending
+on the dimension, but neither approaches Seedance 2.0 on motion quality or prompt following.
+Table 25R2V multi-modal task support across models.✓= supported,✗= not supported.
+Task Input Modality Seedance 2.0 Kling 3 Omni[12]Vidu Q2 Pro[18]Kling O1[11]
+Subject
+Reference
+Image Reference✓ ✓ ✓ ✓
+Video Reference✓ ✓ ✓ ✗
+Audio-Visual Reference✓ ✓ ✓ ✗
+Audio + Image Reference✓ ✓ ✓ ✗
+MotionReference
+Video Motion Reference✓ ✓ ✓ ✓
+Video Motion Reference + Image Reference✓ ✓ ✓ ✓
+Video Motion Reference + First Frame✓ ✓ ✓ ✓
+Visual Effects /
+Creative Ref.
+Visual Effects / Creative Reference✓ ✗ ✗ ✗
+Visual Effects / Creative Reference + Image Reference✓ ✗ ✗ ✗
+Visual Effects / Creative Reference + First Frame✓ ✗ ✗ ✗
+Style
+Reference
+Style Image Reference✓ ✗ ✓ ✓
+Style Image + Subject Image Reference✓ ✗ ✓ ✓
+Style Video Reference✓ ✗ ✓ ✓
+Style Video + Subject Image Reference✓ ✗ ✓ ✓
+VideoEditing
+Video Instruction Editing✓ ✓ ✓ ✓
+Video Reference Image Editing✓ ✓ ✓ ✓
+Continuation/ Extension
+Continuation✓ ✗ ✗ ✗
+Continuation + Subject Image Reference✓ ✗ ✗ ✗
+Extension✓ ✗ ✗ ✗
+Extension + Subject Image Reference✓ ✗ ✗ ✗
+Table 25 compares multi-modal task support. Seedance 2.0 supports 20 of 22 input modalities—the broadest
+of any model. The two unsupported tasks (subject audio-visual + audio reference, video audio editing)
+are unsupported by every model. Three task groups are exclusive to Seedance 2.0: all three visual effects
+/ creative reference variants and all four continuation / extension variants, totaling 7 tasks no competitor
+can handle. Kling 3 Omni supports 9 of 22, lacking style reference, visual effects / creative reference, and
+continuation / extension. Vidu Q2 Pro supports 13 of 22, covering style reference but missing visual effects /
+creative reference and continuation / extension. Kling O1 is the most limited at 10 of 22, additionally lacking
+video-based subject reference and audio-visual inputs.
+Seedance 2.0 achieves the best overall subject reference quality in both appearance and voice across all
+multi-modal competitors, with a clear lead in appearance consistency. As shown in Table 26, on image-based
+subject reference, Seedance 2.0 scores 2.80 on task following (1–3 scale) with 100% 2-point rate and 80%
+3-point rate, ahead of Kling O1 (2.71, 73.68%), Vidu Q2 Pro (2.58, 69.70%), and Kling 3 Omni (2.50, 50%).
+The reference alignment gap is wider: Seedance 2.0 scores 3.18 vs. Kling O1 at 2.71 and Vidu Q2 Pro at
+1.91, a 1.27-point deficit for the latter. On video-based subject reference, Seedance 2.0 scores 2.95 on task
+following with 95% of outputs reaching 3 points, and 3.35 on reference alignment—Vidu Q2 Pro trails at 2.00,
+a 1.35-point gap. For first-video reference, Sora 2 leads on task following (3.00, with 100% 3-point rate), while
+Seedance 2.0 (2.89) and Kling 3 Omni (2.91) are close behind; on reference alignment, Seedance 2.0 and Sora
+20

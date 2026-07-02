@@ -1,0 +1,51 @@
+Table 26R2V subject reference evaluation results. “–” denotes unsupported tasks. Task Fol. (Multimodal Task
+Following) is rated 1–3, Ref. Align. (Reference Alignment) is rated 1–5.
+Model
+Subject Ref. Image Subject Ref. Video Subject Ref. First Video Subject Ref. Image & Audio
+Task Fol. Ref. Align. Task Fol. Ref. Align. Task Fol. Ref. Align. Task Fol. Ref. Align.
+Veo 3.1 [8] – – – – – – – –
+Sora 2 [14] – – – –3.00 3.27– –
+Wan 2.6 [1] – – – – 2.68 2.42 – –
+Kling O1 [11] 2.71 2.71 – – – – – –
+Vidu Q2 Pro [18] 2.58 1.91 2.50 2.00 – – – –
+Kling 3 Omni [12] 2.50 2.55 2.67 2.50 2.91 2.82 2.11 2.05
+Seedance 2.02.80 3.18 2.95 3.352.893.27 2.29 2.37
+2 tie at 3.27. Image & audio combined reference is supported only by Seedance 2.0 and Kling 3 Omni, with
+Seedance 2.0 scoring 2.29 vs. 2.11 on task following—the low absolute scores for both models indicate that
+joint image-audio conditioning remains a difficult problem.
+Table 27R2V motion and style reference evaluation results. “–” denotes unsupported tasks. Task Fol. (Multimodal
+Task Following) is rated 1–3, Ref. Align. (Reference Alignment) and First Frame Pres. are rated 1–5.
+Model
+Motion Reference Style Reference
+Task Fol. Ref. Align. First Frame Pres. Task Fol. Ref. Align.
+Veo 3.1 [8] – – – – –
+Sora 2 [14] – – – – –
+Wan 2.6 [1] – – – – –
+Kling O1 [11] 2.19 1.68 3.46 1.96 1.84
+Vidu Q2 Pro [18] 1.92 1.14 2.57 2.15 1.85
+Kling 3 Omni [12] 2.20 1.97 4.31– –
+Seedance 2.02.60 2.642.712.57 2.37
+Seedance 2.0 produces the best reference alignment for body motion, visual effects, and creative sequences,
+while competitors frequently fail to reproduce referenced effects or capture complete body movements. Table 27
+shows Seedance 2.0 scoring 2.60 on motion reference task following, ahead of Kling 3 Omni (2.20), Kling O1
+(2.19), and Vidu Q2 Pro (1.92). On reference alignment, the gap widens: Seedance 2.0 scores 2.64, while
+all competitors fall below 2.0—Vidu Q2 Pro scores only 1.14, meaning most outputs bear little resemblance
+to the reference motion. One exception: on first-frame preservation, Kling 3 Omni scores 4.31, well above
+Seedance 2.0’s 2.71. Kling 3 Omni tends to keep the first frame nearly unchanged but produces weaker
+subsequent motion, while Seedance 2.0 generates more dynamic video at the cost of lower first-frame fidelity.
+On style reference, Seedance 2.0 leads with 2.57 on task following (60% 3-point rate) vs. Vidu Q2 Pro (2.15,
+33.33%) and Kling O1 (1.96, 10.71%). Kling 3 Omni does not support style reference at all. Reference
+alignment follows the same order: 2.37, 1.85, 1.84. When combining style and subject reference, Seedance 2.0
+produces more accurate responses and better generation quality; competitors frequently misinterpret the task
+as reference-image editing or produce artifacts, with Kling 3 Omni exhibiting this issue most often.
+Video editing is the most competitive R2V task. In Table 28, Kling O1 slightly leads on task following (2.29
+vs. Seedance 2.0’s 2.20), and Kling 3 Omni is close at 2.24—all three within 0.09 points. However, Seedance
+2.0 pulls ahead on reference alignment (3.79 vs. Kling O1’s 3.03) and editing consistency (3.75 vs. Kling 3
+Omni’s 3.09). Seedance 2.0 responds better to long-text and multi-edit instructions and handles complex
+editing tasks more completely, while also producing more accurate results for well-known IP references. All
+models share common failure modes: unresponsive edits and unintended modifications to non-edit regions.
+Video continuation is currently supported only by Seedance 2.0, which scores 2.88 on task following and 3.18
+on reference alignment. It handles complex narratives and long-text continuation prompts well, though issues
+remain with color consistency, multi-subject omission, and subject duplication.
+For video extension, Seedance 2.0 and Veo 3.1 are the only two models evaluated, but they differ in scope:
+21

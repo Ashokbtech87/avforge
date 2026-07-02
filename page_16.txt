@@ -1,0 +1,48 @@
+Table 17Fine-grained I2V visual evaluation on physical laws. Rating from 1 to 5.
+Model
+Natural Phenomena Physical Phen. (Prof.) Physical Feedback (Daily)
+MQ IP VPF MQ IP VPF MQ IP VPF
+Kling 2.6 [10] 2.67 3.11 2.67 2.573.502.50 2.29 2.86 2.50
+Wan 2.6 [1] 2.38 2.00 2.88 2.38 2.77 2.54 2.27 2.80 2.67
+Veo 3.1 [8] 2.67 2.56 2.78 2.79 3.00 3.07 2.46 2.92 2.69
+Seedance 1.5 Pro [16] 2.33 2.89 2.56 2.14 3.07 2.36 2.13 2.93 2.80
+Kling 3.0 [12] 3.00 3.563.00 2.64 3.36 2.93 2.73 3.132.73
+Seedance 2.03.333.44 3.33 3.143.36 3.36 2.873.07 2.93
+Physical Laws.Seedance 2.0 leads on MQ across all three physical laws sub-categories (Table 17), scoring
+2.87–3.33. Kling 3.0 outscores Seedance 2.0 on IP for natural phenomena (3.56 vs. 3.44) and ties on professional
+phenomena (3.36)—one of the few areas where a competitor beats Seedance 2.0 on a specific metric. Kling
+2.6 scores 3.50 on professional phenomena IP, its highest value in any visual table, though its MQ (2.57) and
+VPF (2.50) stay low. Physical laws is difficult across the board: Seedance 1.5 Pro scores below 2.4 on MQ for
+all three sub-categories, and motion stability during physics simulations remains a challenge for every model.
+Table 18Fine-grained I2V visual evaluation on complex reference images. Rating from 1 to 5.
+Model
+High Information
+Density
+Multi-Ethnicity /
+Skin Tone
+MQ IP VPF MQ IP VPF
+Kling 2.6 [10] 2.67 3.07 3.00 2.60 3.07 2.73
+Wan 2.6 [1] 2.20 2.53 3.00 2.57 3.00 2.71
+Veo 3.1 [8] 2.67 2.80 2.87 2.82 2.45 2.64
+Seedance 1.5 Pro [16] 2.67 3.00 3.13 2.73 3.00 3.00
+Kling 3.0 [12] 2.87 3.33 3.13 3.21 3.432.93
+Seedance 2.03.40 3.40 3.73 3.473.33 3.53
+Complex Reference.Seedance 2.0 leads on MQ and VPF for both complex reference sub-categories, and on
+IP for high information density (Table 18). High information density VPF (3.73) outscores Kling 3.0 (3.13)
+by 0.60 points. Kling 3.0 outscores Seedance 2.0 on multi-ethnicity IP (3.43 vs. 3.33), one of the few metrics
+where a competitor takes the lead. The visual average confirms the overall ranking: Seedance 2.0 leads on
+MQ (3.35), IP (3.31), and VPF (3.46). Kling 3.0 is second on IP (3.18) and third on VPF (2.78), ahead of
+Seedance 1.5 Pro (2.77). Wan 2.6 ranks last on MQ (2.32) and IP (2.61).
+2.4.3 Detailed Audio Evaluation Results
+Chinese Voice.Seedance 2.0 leads on AQ for all four Chinese voice sub-categories in Table 19, scoring
+3.13–3.92. Chinese dialogue carries emotional nuance, and common dialects and accents come through clearly.
+Chinese conversation is its strongest (AQ 3.92, APF 4.08), with a 0.83-point AQ lead over Kling 3.0 and a
+1.67-point lead over Seedance 1.5 Pro. Variety show voice reaches 4.00 on both AVS and APF, the highest
+sync score in this table. Chinese opera is a weak spot for all models on prompt following—Seedance 2.0 scores
+only 2.50 on APF, though its AQ (3.75) is best. Kling 3.0 is the closest competitor on dialect/lip sync (AQ
+3.17 vs. 3.23) and opera sync (AVS 3.00 vs. 3.38). Veo 3.1, Wan 2.6, and Kling 2.6 score below 2.5 on AQ for
+most sub-categories, with Kling 2.6 at 2.00 on dialect—the lowest AQ in this table.
+Non-Chinese Voice.Seedance 2.0 scores at least 3.50 on AQ for all six non-Chinese languages in Table 20,
+peaking on Spanish (AQ 4.14, AVS 4.14) and English (AQ 4.00, APF 4.20). English prompt following reaches
+4.20—the highest APF in this table. Indonesian APF (4.14) is also strong, providing the second-highest
+17

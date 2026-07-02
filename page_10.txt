@@ -1,0 +1,56 @@
+Table 5T2V detailed aesthetics evaluation results across fine-grained categories. Rating from 1 to 5, with higher
+scores indicating better performance.
+Category Kling 2.6[10]Kling 3.0[12]Sora2 Pro[14]Veo3.1[8]Seedance 1.5[16]Seedance 2.0
+Holidays / Festivals 2.71 2.71 2.38 2.363.00 3.00
+Consumer Visual Effects 2.71 2.64 2.38 2.453.002.79
+Counter-Reality Instructions 3.43 3.57 3.00 3.20 3.293.86
+Cinematic Visual Effects 3.64 3.64 3.00 2.73 3.144.00
+Same-Type Interaction 3.29 3.79 2.79 2.85 3.293.86
+Cross-Type Interaction 3.36 3.14 3.14 3.15 3.36 3.43
+Group Coordinated Motion 2.86 3.00 2.43 2.50 3.00 3.29
+Advanced Camera Movement3.543.38 2.83 3.00 2.923.54
+Special Camera Shots 3.08 3.46 2.67 3.09 3.153.85
+Editing Rhythm 3.21 3.57 3.29 3.08 3.294.00
+Combined Shot Instructions 3.29 3.573.00 2.67 3.29 3.57
+Physical Feedback 3.31 3.31 2.46 3.33 3.233.54
+Physical Phenomena 3.00 3.23 2.77 2.92 3.003.54
+Natural Phenomena 3.33 3.67 2.33 2.57 3.004.00
+Text Overlay 2.92 3.15 3.00 2.75 3.15 3.31
+Short Text 3.43 3.14 3.00 3.00 3.003.86
+Creative Text 2.57 3.00 2.86 3.17 3.003.57
+Long Script 3.29 3.57 2.86 3.17 3.144.14
+Abstract Challenges 3.29 3.57 3.17 2.57 3.293.86
+Multi-Entity Feature Match 3.71 3.43 3.14 2.50 3.434.00
+Knowledge Assessment 3.23 3.31 2.62 3.09 3.31 3.54
+Compound Multi-Instructions 3.29 3.57 2.86 2.80 3.293.86
+Surreal Motion 3.143.862.86 2.57 3.57 3.57
+Intense Sports Motion 3.07 3.21 2.64 2.71 3.003.79
+Fine Hand Motion3.432.93 2.57 3.00 3.21 3.43
+Anthropomorphic Motion3.71 3.713.29 3.29 3.43 3.71
+Emotion & Expression 3.21 3.71 2.93 3.10 3.293.86
+Visual Style 3.29 3.50 3.15 2.92 3.214.14
+Lighting & Color Tone 3.00 3.50 2.62 2.79 3.363.86
+Framing / Composition 3.38 3.75 3.38 2.88 3.254.13
+2.3.5 Audio Quality
+Table 6T2V detailed audio quality evaluation results across fine-grained categories. Rating from 1 to 5, with higher
+scores indicating better performance.
+Category Kling 2.6[10]Kling 3.0[12]Sora2 Pro[14]Veo3.1[8]Seedance 1.5[16]Seedance 2.0
+Chinese Dialect / Accent 2.05 2.41 2.29 2.10 2.322.82
+Chinese Multi-Person Dialogue 2.36 2.93 2.79 2.20 3.00 3.71
+Chinese Variety Show Voice 2.14 2.57 2.71 2.14 2.573.14
+Chinese Opera 2.13 2.88 2.17 2.00 2.503.75
+English 3.08 3.17 2.82 3.10 3.004.17
+Minority Languages 2.03 2.59 2.85 2.89 3.09 3.82
+Singing / Rap 3.14 2.71 3.67 3.00 2.713.71
+Spatial Scene 2.57 3.14 2.71 2.67 2.863.43
+Off-Screen Voice 2.29 3.00 3.00 2.50 3.00 3.29
+Non-Verbal Voice 2.44 2.44 2.78 2.56 2.673.56
+Voice + Action Interaction 2.71 3.14 3.17 2.67 3.004.00
+Object Interaction Sound 2.59 2.47 2.65 2.76 3.06 3.76
+Animal Sound 2.36 2.57 2.54 2.57 2.79 3.57
+Ambient / Background Sound 2.78 2.33 2.44 2.63 3.00 3.78
+Special Effects (ASMR, etc.) 2.59 2.76 3.12 2.79 3.003.71
+Instruments & Audio 2.79 3.00 2.78 2.89 2.953.68
+Dual-Channel Audio 3.00 3.00 2.57 2.50 3.14 3.43
+Moving to audio, Seedance 2.0 improves over Seedance 1.5 on vocal and singing expressiveness, BGM-to-visual
+11

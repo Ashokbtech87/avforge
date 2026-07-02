@@ -1,0 +1,13 @@
+{
+  "id": "hf_noise_00001",
+  "type": "hf_noise",
+  "categories": [
+    "Visual Style"
+  ],
+  "physics": {
+    "contact": false,
+    "momentum": false,
+    "support": false
+  },
+  "n_frames": 24
+}

@@ -1,0 +1,51 @@
+matching, and audio layering. Kling 3.0 regresses from Kling 2.6 on singing/rap and ambient background
+sound. Sora 2 Pro produces vivid audio with strength on singing, though limited to a narrow set of categories.
+Competitors broadly have muddy audio, noticeable noise, and weak layering, especially on complex sound
+effects and vocal clarity. Per Table 6, Seedance 2.0 ranks first on all 17 categories, scoring 2.82–4.17. English
+(4.17), voice + action interaction (4.00), minority languages (3.82), and ambient/background sound (3.78)
+are strongest. The improvement over Seedance 1.5 is largest on Chinese opera (2.50→ 3.75), English (3.00
+→4.17), and singing/rap (2.71→3.71). Kling 3.0 drops below Kling 2.6 on singing/rap (2.71 vs. 3.14) and
+ambient/background sound (2.33 vs. 2.78), despite improving elsewhere. Sora 2 Pro scores 3.67 on singing/rap
+(second only to Seedance 2.0) and 3.17 on voice + action interaction, but falls to 2.17 on Chinese opera and
+2.44 on ambient sound. No competitor exceeds 3.2 on any category apart from Sora 2 Pro’s singing/rap (3.67).
+2.3.6 Audio-Visual Sync
+Table 7T2V detailed audio-visual synchronization evaluation results across fine-grained categories. Rating from 1 to
+5, with higher scores indicating better performance.
+Category Kling 2.6[10]Kling 3.0[12]Sora2 Pro[14]Veo3.1[8]Seedance 1.5[16]Seedance 2.0
+Chinese Dialect / Accent 2.68 3.14 2.67 2.50 3.003.64
+Chinese Multi-Person Dialogue 2.36 2.93 2.64 2.10 2.363.86
+Chinese Variety Show Voice 2.29 2.71 2.29 2.43 2.86 3.14
+Chinese Opera 2.38 2.63 2.50 2.71 2.633.63
+English 2.83 3.00 3.00 2.40 3.50 4.17
+Minority Languages 2.88 2.97 2.53 2.68 2.743.88
+Singing / Rap 3.00 2.57 3.50 3.00 3.294.14
+Spatial Scene 2.71 3.14 2.43 1.67 3.003.86
+Off-Screen Voice 2.29 2.43 2.33 2.332.86 2.86
+Non-Verbal Voice 2.67 2.56 2.44 2.56 2.89 4.00
+Voice + Action Interaction 2.64 2.36 2.42 2.33 3.14 3.71
+Object Interaction Sound 2.65 2.53 2.53 2.82 2.653.82
+Animal Sound 2.21 2.64 2.77 2.36 2.79 3.93
+Ambient / Background Sound 2.67 2.89 2.89 2.38 3.00 3.56
+Special Effects (ASMR, etc.) 2.65 2.53 2.53 2.86 3.18 3.53
+Instruments & Audio 3.00 2.79 2.72 2.78 2.893.63
+Dual-Channel Audio 2.86 3.00 3.43 2.17 3.294.00
+Lip synchronization and action-audio alignment are both strong for Seedance 2.0, with very few cases of delay
+or misalignment. Competitors commonly produce lip-speech mismatches and action-sound offsets, worse in
+fast dialogue and complex action scenes. In Table 7, Seedance 2.0 ranks first on 16 of 17 categories (tying with
+Seedance 1.5 on off-screen voice at 2.86), scoring 2.86–4.17. English (4.17), singing/rap (4.14), dual-channel
+audio (4.00), and non-verbal voice (4.00) are strongest. The largest gains over Seedance 1.5 are Chinese
+multi-person dialogue (2.36→ 3.86), object interaction sound (2.65→ 3.82), and animal sound (2.79→ 3.93).
+No competitor reaches 3.5 on any category apart from Sora 2 Pro on singing/rap (3.50) and Seedance 1.5
+on English (3.50). Veo 3.1 is weakest, dropping to 1.67 on spatial scene and 2.10 on Chinese multi-person
+dialogue. Kling 3.0 regresses from Kling 2.6 on singing/rap (2.57 vs. 3.00) and instruments & audio (2.79 vs.
+3.00), while improving on Chinese dialect (3.14 vs. 2.68).
+2.3.7 Audio Prompt Following
+Audio prompt following is the dimension where competitors score lowest. Seedance 2.0 is strong on complex
+audio instructions involving multilingual dialogue, dialect-specific speech, and diverse sound profiles such
+as animal vocalizations. Sora 2 Pro has an edge on instrument and natural sound effect following, while
+other models are weaker at generating specific timbres and language-accurate audio. Table 8 shows Seedance
+2.0 first on 16 of 17 categories (tying with Kling 3.0 on off-screen voice at 3.14), scoring 2.91–4.25. English
+(4.25), instruments & audio (3.89), ambient/background sound (3.89), voice + action interaction (3.86), and
+animal sound (3.86) are strongest. The largest gains over Seedance 1.5 are Chinese opera (1.75→ 3.50),
+singing/rap (2.14 → 3.71), and animal sound (2.50→ 3.86). Chinese dialect drops below 2.0 for five of six
+12

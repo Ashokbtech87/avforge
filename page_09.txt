@@ -1,0 +1,55 @@
+Table 4T2V detailed Video Prompt Following evaluation results across fine-grained categories. Rating from 1 to 5,
+with higher scores indicating better performance.
+Category Kling 2.6[10]Kling 3.0[12]Sora2 Pro[14]Veo3.1[8]Seedance 1.5[16]Seedance 2.0
+Holidays / Festivals 2.14 2.50 3.08 2.57 2.503.57
+Consumer Visual Effects 2.14 2.93 3.00 2.55 2.793.36
+Counter-Reality Instructions 2.43 3.00 3.17 3.40 3.004.29
+Cinematic Visual Effects 2.71 3.00 2.50 3.09 3.003.64
+Same-Type Interaction 2.29 3.07 2.36 2.62 2.363.64
+Cross-Type Interaction 2.64 2.79 2.57 2.69 2.79 3.50
+Group Coordinated Motion 2.86 3.14 2.86 2.50 2.573.86
+Advanced Camera Movement 2.69 2.85 2.50 2.40 2.773.46
+Special Camera Shots 2.00 2.62 2.75 2.27 2.463.00
+Editing Rhythm 2.57 2.50 2.93 2.62 2.433.14
+Combined Shot Instructions 2.71 2.57 2.29 2.33 2.433.29
+Physical Feedback 3.08 3.23 2.77 2.75 2.463.62
+Physical Phenomena 2.23 2.77 2.77 2.33 1.923.31
+Natural Phenomena 2.33 3.11 3.22 2.71 2.563.89
+Text Overlay 1.85 2.00 2.91 2.17 2.153.31
+Short Text 1.86 2.29 3.33 2.17 2.003.57
+Creative Text 1.71 2.00 3.00 1.67 1.863.43
+Long Script 2.00 2.86 3.00 2.67 2.433.29
+Abstract Challenges 2.00 3.144.172.86 2.86 3.86
+Multi-Entity Feature Match 2.14 3.14 3.00 2.17 2.433.86
+Knowledge Assessment 2.23 2.54 2.77 3.00 3.00 3.23
+Compound Multi-Instructions 2.71 3.14 2.14 2.40 2.573.71
+Surreal Motion 2.43 2.711.86 2.00 2.142.71
+Intense Sports Motion 2.64 2.79 2.36 2.43 2.713.21
+Fine Hand Motion 2.29 2.93 2.86 2.38 2.573.50
+Anthropomorphic Motion 2.00 2.14 2.86 3.002.57 2.86
+Emotion & Expression 2.64 3.43 3.21 3.40 2.934.00
+Visual Style 2.36 2.21 2.62 2.54 2.142.93
+Lighting & Color Tone 2.50 2.79 3.00 2.79 2.503.21
+Framing / Composition 2.88 3.25 3.503.00 2.63 3.13
+first on 27 of 30 categories, scoring 2.71–4.29. The largest gains over Seedance 1.5 appear on text-related
+categories—creative text (1.86→ 3.43), short text (2.00→ 3.57), text overlay (2.15→ 3.31)—and on physical
+phenomena (1.92 → 3.31) and natural phenomena (2.56→ 3.89). Counter-reality instructions (4.29) and
+emotion & expression (4.00) are its two highest categories. Sora 2 Pro leads on abstract challenges (4.17
+vs. 3.86) and framing/composition (3.50 vs. 3.13), but drops to 1.86 on surreal motion. Veo 3.1 leads on
+anthropomorphic motion (3.00) but scores below 2.2 on text overlay (2.17), short text (2.17), and creative
+text (1.67). Kling 3.0 scores 3.43 on emotion & expression and 3.23 on physical feedback, but falls to 2.00 on
+text overlay and creative text.
+2.3.4 Video Aesthetics
+Aesthetics is the most competitive dimension. Seedance 2.0 leads on visual effects, scene design, lighting
+and color, and realistic detail. Kling 3.0 is relatively strong on stylization and color expression, while other
+competitors are weaker on photorealism and fine detail. In Table 5, Seedance 2.0 ranks first or tied for
+first on 28 of 30 categories, scoring 2.79–4.14. Its highest scores are visual style (4.14), long script (4.14),
+framing/composition (4.13), and four categories at 4.00 (cinematic visual effects, editing rhythm, natural
+phenomena, multi-entity feature match). Seedance 2.0 does not lead on consumer visual effects (Seedance
+1.5: 3.00 vs. 2.79) or surreal motion (Kling 3.0: 3.86 vs. 3.57), and ties on anthropomorphic motion (3.71,
+three-way) and advanced camera movement (3.54, tied with Kling 2.6). Kling 3.0 scores above 3.5 on 13
+categories, with its best on surreal motion (3.86), same-type interaction (3.79), and framing/composition
+(3.75). Sora 2 Pro and Veo 3.1 lag: Sora 2 Pro drops below 2.5 on holidays (2.38), consumer visual effects
+(2.38), and natural phenomena (2.33); Veo 3.1 scores lowest on holidays (2.36), consumer visual effects (2.45),
+and multi-entity feature match (2.50).
+10

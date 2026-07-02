@@ -1,0 +1,168 @@
+[
+  {
+    "id": "collision_00000",
+    "type": "collision",
+    "categories": [
+      "Physical Phenomena",
+      "Physical Feedback"
+    ],
+    "physics": {
+      "contact": true,
+      "momentum": true,
+      "support": false
+    },
+    "n_frames": 24
+  },
+  {
+    "id": "collision_00001",
+    "type": "collision",
+    "categories": [
+      "Physical Phenomena",
+      "Physical Feedback"
+    ],
+    "physics": {
+      "contact": true,
+      "momentum": true,
+      "support": false
+    },
+    "n_frames": 24
+  },
+  {
+    "id": "fluid_00000",
+    "type": "fluid",
+    "categories": [
+      "Natural Phenomena",
+      "Physical Phenomena"
+    ],
+    "physics": {
+      "contact": true,
+      "momentum": false,
+      "support": true
+    },
+    "n_frames": 24
+  },
+  {
+    "id": "fluid_00001",
+    "type": "fluid",
+    "categories": [
+      "Natural Phenomena",
+      "Physical Phenomena"
+    ],
+    "physics": {
+      "contact": true,
+      "momentum": false,
+      "support": true
+    },
+    "n_frames": 24
+  },
+  {
+    "id": "multispeaker_00000",
+    "type": "multispeaker",
+    "categories": [
+      "Chinese Multi-Person Dialogue",
+      "Audio-Visual Sync"
+    ],
+    "physics": {
+      "contact": false,
+      "momentum": false,
+      "support": false
+    },
+    "n_frames": 24
+  },
+  {
+    "id": "multispeaker_00001",
+    "type": "multispeaker",
+    "categories": [
+      "Chinese Multi-Person Dialogue",
+      "Audio-Visual Sync"
+    ],
+    "physics": {
+      "contact": false,
+      "momentum": false,
+      "support": false
+    },
+    "n_frames": 24
+  },
+  {
+    "id": "text_edit_00000",
+    "type": "text_edit",
+    "categories": [
+      "Text Overlay",
+      "Creative Text"
+    ],
+    "physics": {
+      "contact": false,
+      "momentum": false,
+      "support": false
+    },
+    "n_frames": 24
+  },
+  {
+    "id": "text_edit_00001",
+    "type": "text_edit",
+    "categories": [
+      "Text Overlay",
+      "Creative Text"
+    ],
+    "physics": {
+      "contact": false,
+      "momentum": false,
+      "support": false
+    },
+    "n_frames": 24
+  },
+  {
+    "id": "extension_seam_00000",
+    "type": "extension_seam",
+    "categories": [
+      "Multi-Entity Feature Match",
+      "Lighting & Color Tone"
+    ],
+    "physics": {
+      "contact": false,
+      "momentum": true,
+      "support": false
+    },
+    "n_frames": 24
+  },
+  {
+    "id": "extension_seam_00001",
+    "type": "extension_seam",
+    "categories": [
+      "Multi-Entity Feature Match",
+      "Lighting & Color Tone"
+    ],
+    "physics": {
+      "contact": false,
+      "momentum": true,
+      "support": false
+    },
+    "n_frames": 24
+  },
+  {
+    "id": "hf_noise_00000",
+    "type": "hf_noise",
+    "categories": [
+      "Visual Style"
+    ],
+    "physics": {
+      "contact": false,
+      "momentum": false,
+      "support": false
+    },
+    "n_frames": 24
+  },
+  {
+    "id": "hf_noise_00001",
+    "type": "hf_noise",
+    "categories": [
+      "Visual Style"
+    ],
+    "physics": {
+      "contact": false,
+      "momentum": false,
+      "support": false
+    },
+    "n_frames": 24
+  }
+]

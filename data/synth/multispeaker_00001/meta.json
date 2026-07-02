@@ -1,0 +1,14 @@
+{
+  "id": "multispeaker_00001",
+  "type": "multispeaker",
+  "categories": [
+    "Chinese Multi-Person Dialogue",
+    "Audio-Visual Sync"
+  ],
+  "physics": {
+    "contact": false,
+    "momentum": false,
+    "support": false
+  },
+  "n_frames": 24
+}

@@ -1,0 +1,59 @@
+Table 8T2V detailed Audio Prompt Following evaluation results across fine-grained categories. Rating from 1 to 5,
+with higher scores indicating better performance.
+Category Kling 2.6[10]Kling 3.0[12]Sora2 Pro[14]Veo3.1[8]Seedance 1.5[16]Seedance 2.0
+Chinese Dialect / Accent 1.23 1.86 1.86 1.20 1.822.91
+Chinese Multi-Person Dialogue 2.00 2.79 2.21 1.80 2.363.29
+Chinese Variety Show Voice 2.00 2.29 2.71 1.57 2.433.29
+Chinese Opera 1.63 2.13 2.33 1.29 1.753.50
+English 2.25 3.33 3.64 3.00 3.254.25
+Minority Languages 1.03 2.18 3.12 2.61 3.26 3.74
+Singing / Rap 3.14 3.43 3.67 2.17 2.143.71
+Spatial Scene 2.71 2.86 2.71 2.50 2.86 3.29
+Off-Screen Voice 2.573.143.00 1.83 2.713.14
+Non-Verbal Voice 2.00 2.00 2.89 2.33 3.00 3.67
+Voice + Action Interaction 2.57 3.21 3.50 2.33 3.213.86
+Object Interaction Sound 2.41 2.00 2.53 2.53 2.53 3.29
+Animal Sound 1.64 2.64 2.77 2.21 2.503.86
+Ambient / Background Sound 2.44 2.67 3.22 2.38 2.783.89
+Special Effects (ASMR, etc.) 2.18 2.35 3.29 2.14 2.943.47
+Instruments & Audio 2.58 3.11 3.61 3.06 2.793.89
+Dual-Channel Audio 2.71 2.57 2.86 2.17 2.433.29
+models, and Chinese opera below 2.4 for five of six. Sora 2 Pro is the strongest competitor, scoring 3.67 on
+singing/rap, 3.64 on English, 3.61 on instruments & audio, and 3.50 on voice + action interaction, but falls to
+1.86 on Chinese dialect. Kling 3.0 regresses from Kling 2.6 on object interaction sound (2.00 vs. 2.41) and
+dual-channel audio (2.57 vs. 2.71). Veo 3.1 scores below 2.0 on Chinese dialect (1.20), Chinese variety show
+voice (1.57), Chinese opera (1.29), and off-screen voice (1.83).
+2.4 Image-to-Video Evaluation on SeedVideoBench 2.0
+2.4.1 Overall Results
+Table 9I2V overall evaluation results across video and audio dimensions (Rating from 1 to 5).
+Video Audio
+Model Motion
+Quality
+Video Prompt
+Following
+Image
+Preservation
+Quality &
+Expressiveness
+Audio-Visual
+Sync
+Audio Prompt
+Following
+Wan 2.6 [1] 2.32 2.74 2.61 2.20 2.18 2.55
+Kling 2.6 [10] 2.52 2.55 2.98 2.21 2.27 2.21
+Veo3.1 [8] 2.65 2.87 2.69 2.68 2.69 2.79
+Seedance 1.5 Pro [16] 2.53 2.77 2.92 3.07 2.95 3.10
+Kling 3.0 [12] 2.80 2.78 3.18 2.89 2.83 2.85
+Seedance 2.0 3.35 3.46 3.31 3.61 3.54 3.70
+Table 9 summarizes the I2V results. Seedance 2.0 ranks first on all six dimensions, scoring 3.31–3.70, while
+no competitor exceeds 3.18. The three video dimensions show 3.35 (motion quality), 3.46 (video prompt
+following), and 3.31 (image preservation). Source image preservation is the tightest race—Kling 3.0 trails by
+only 0.13—while motion quality shows a 0.55-point gap to the runner-up. The three audio dimensions are
+where competitors fall furthest behind: Seedance 2.0 scores 3.61, 3.54, and 3.70, while Kling 2.6 (2.21) and
+Wan 2.6 [1] (2.18–2.55) sit well below 3.0. Seedance 1.5 Pro is second on audio (3.07, 2.95, 3.10) but still
+trails by 0.54–0.60. Audio prompt following (3.70) is Seedance 2.0’s highest I2V score. A two-tier pattern is
+clear: Seedance 2.0 leads on both video and audio, while competitors are weaker on audio than on video.
+Table 10 breaks this down further. Seedance 2.0 is the only model with usability above 87% on all six
+dimensions. On motion quality, its 43.88% satisfaction rate is over 3× the runner-up Kling 3.0 (12.00%); on
+video prompt following, 47.48% vs. Veo 3.1’s 20.54%. Source image preservation is again closest: 91.37%
+13
